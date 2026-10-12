@@ -205,15 +205,16 @@ export default function Home() {
             <p>Phone: (555) 123‑4567</p>
             <p>Email: info@industrialdustingco.com</p>
           © {currentYear || "Loading..."} Industrial Dusting Co. All rights reserved.
-          <div>
-            <h4>Service Area</h4>
-            <p>Greater Sacramento Metro </p>
-          </div>
+            <div>
+              <h4>Service Area</h4>
+              <p>Greater Sacramento Metro </p>
+            </div>
           
         </div>
         <p className="footer-bottom">
           © {currentYear || "Loading..."} Industrial Dusting Co. All rights reserved.
         </p>
+        </div>
       </footer>
     </div>
   );
