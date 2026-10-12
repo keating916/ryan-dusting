@@ -1,13 +1,9 @@
 import Image from "next/image";
-import { cacheLife } from 'next/cache'
+import Footer from "./footer";
 
 export default async function Home() {
 
-  async function getCurrentYear() {
-    'use cache'
-    cacheLife('max')
-    return new Date().getFullYear();
-  }
+
 
 
   return (
@@ -188,25 +184,7 @@ export default async function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="footer">
-        <div className="footer-grid">
-          <div>
-            <h3>Industrial Dusting Co.</h3>
-            <p>Specialized high‑surface dust removal for industrial facilities.</p>
-          </div>
-          <div>
-            <h4>Contact</h4>
-            <p>Phone: (555) 123‑4567</p>
-            <p>Email: info@industrialdustingco.com</p>
-          © {getCurrentYear} Industrial Dusting Co. All rights reserved.
-            <div>
-              <h4>Service Area</h4>
-              <p>Greater Sacramento Metro </p>
-            </div>
-          
-        </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
