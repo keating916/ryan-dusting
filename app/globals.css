@@ -1,11 +1,12 @@
 /* styles.css */
 :root {
-  --bg: #f5f7fb;
-  --bg-alt: #ffffff;
-  --primary: #1f4fff;
+  --bg: #000000;
+  --bg-alt: #000000;
+  --primary: #c2a500;
   --primary-dark: #1636b3;
-  --text: #1b1b1f;
-  --muted: #6b6f7b;
+  --text: #c2a500;
+  --muted-light: #3f4247;
+  --muted: #b6b7bd;
   --border: #dde1ee;
 }
 
@@ -48,7 +49,7 @@ body {
 
 .hero p {
   font-size: 1rem;
-  color: var(--muted);
+  color: var(--muted-light);
   margin-bottom: 20px;
 }
 
@@ -159,7 +160,7 @@ body {
 
 .card p {
   margin: 0;
-  color: var(--muted);
+  color: var(--muted-light);
 }
 
 /* LISTS */
@@ -171,7 +172,7 @@ body {
 
 .list li {
   padding: 4px 0;
-  color: var(--muted);
+  color: var(--muted-light);
 }
 
 .list.small li {
@@ -186,7 +187,7 @@ body {
 
 .process-card li {
   margin-bottom: 8px;
-  color: var(--muted);
+  color: var(--muted-light);
 }
 
 /* PRICING */
@@ -290,7 +291,7 @@ body {
 
 .testimonial-name {
   font-size: 0.9rem;
-  color: var(--muted);
+  color: var(--muted-light);
 }
 
 /* FOOTER */
@@ -317,6 +318,13 @@ body {
   margin-top: 16px;
   font-size: 0.85rem;
   text-align: center;
+}
+
+.footer-copyright {
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 12px;
 }
 
 /* RESPONSIVE */

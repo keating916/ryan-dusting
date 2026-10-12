@@ -18,16 +18,20 @@ export default async function Footer({  }) {
           </div>
           <div>
             <h4>Contact</h4>
-            <p>Phone: (555) 123‑4567</p>
+            <p>Phone: (916) 345-8745</p>
             <p>Email: info@industrialdustingco.com</p>
-          © {yeardate} Industrial Dusting Co. All rights reserved.
-            <div>
-              <h4>Service Area</h4>
-              <p>Greater Sacramento Metro </p>
-            </div>
+          
+          </div>
+        <div>
+            <h4>Service Area</h4>
+            <p>Greater Sacramento Metro </p>
+        </div>
           
         </div>
+        <div className='footer-copyright'> 
+            © {yeardate} Industrial Dusting Co. All rights reserved.
         </div>
+        
       </footer>
     </>
   )
