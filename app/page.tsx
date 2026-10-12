@@ -1,10 +1,7 @@
 import Image from "next/image";
 import { cacheLife } from 'next/cache'
 
-import { useState, useEffect } from "react";
-
-export default function Home() {
-  const [currentYear, setCurrentYear] = useState<number | null>(null);
+export default async function Home() {
 
   async function getCurrentYear() {
     'use cache'
@@ -12,9 +9,6 @@ export default function Home() {
     return new Date().getFullYear();
   }
 
-  useEffect(() => {
-    getCurrentYear().then(setCurrentYear);
-  }, []);
 
   return (
     <div className="page">
@@ -204,16 +198,13 @@ export default function Home() {
             <h4>Contact</h4>
             <p>Phone: (555) 123‑4567</p>
             <p>Email: info@industrialdustingco.com</p>
-          © {currentYear || "Loading..."} Industrial Dusting Co. All rights reserved.
+          © {getCurrentYear} Industrial Dusting Co. All rights reserved.
             <div>
               <h4>Service Area</h4>
               <p>Greater Sacramento Metro </p>
             </div>
           
         </div>
-        <p className="footer-bottom">
-          © {currentYear || "Loading..."} Industrial Dusting Co. All rights reserved.
-        </p>
         </div>
       </footer>
     </div>
