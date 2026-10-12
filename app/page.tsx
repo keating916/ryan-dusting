@@ -1,7 +1,9 @@
 import Image from "next/image";
 
-
 export default function Home() {
+  const date = new Date();
+  const yeardate = date.getFullYear();
+
   return (
     <div className="page">
       {/* HERO */}
@@ -198,7 +200,7 @@ export default function Home() {
           
         </div>
         <p className="footer-bottom">
-          © {new Date().getFullYear()} Industrial Dusting Co. All rights reserved.
+          © {yeardate} Industrial Dusting Co. All rights reserved.
         </p>
       </footer>
     </div>
