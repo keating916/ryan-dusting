@@ -24,7 +24,13 @@ export default async function Home() {
         </div>
         <div className="hero-image">
           <div className="hero-image-placeholder">
-            Warehouse rafters & high‑reach dusting imagery
+            <Image
+              src="/images/industrial-dusting.jpg"
+              alt="Industrial Dusting"
+              fill
+              className="hero-img"
+              style={{ objectFit: "cover", borderRadius: "16px" }}
+            />
           </div>
         </div>
       </header>
@@ -58,12 +64,11 @@ export default async function Home() {
         <h2>Service Capabilities</h2>
         <div className="grid grid-2">
           <ul className="list">
-            <li>High‑reach dusting (up to 40–60 ft)</li>
+            <li>High‑reach dusting (up to 20–30 ft)</li>
             <li>Rafters, beams, piping, and overhead structures</li>
             <li>Equipment exterior dust removal</li>
             <li>Warehouse shelving & pallet rack dusting</li>
             <li>Vent, duct, and fan cleaning</li>
-            <li>Pre‑inspection cleaning for audits or certifications</li>
           </ul>
           <div className="card process-card">
             <h3>Our Process</h3>
@@ -82,7 +87,7 @@ export default async function Home() {
               </li>
               <li>
                 <strong>Final Inspection</strong> – Before/after photos and a
-                summary you can share with auditors.
+                summary.
               </li>
             </ol>
           </div>
@@ -125,7 +130,7 @@ export default async function Home() {
             <h3>Add‑Ons</h3>
             <ul className="list">
               <li>Equipment deep cleaning</li>
-              <li>Floor‑to‑ceiling sanitation</li>
+              
               <li>After‑hours service</li>
               <li>Monthly/quarterly maintenance plans</li>
             </ul>
